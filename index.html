@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destiny2 Blog</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <a name="inizio"></a>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="logo"><img src="./images/destiny-logo-white.png" alt="destiny-logo-white"></div>
+            <ul class="menu">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a class="hover" href="./pages/wiki.html">Wiki</a></li>
+                <li><a href="./pages/classi.html">Classi</a></li>
+                <li><a href="./pages/mondi.html">Mondi</a></li>
+                <li><a href="./pages/equip.html">Equipaggiamento</a></li>
+            </ul>
+            <div class="cta"><a href="https://www.bungie.net/7/it/Destiny/NewLight" target="_blank" class="button">Gioca</a></div>
+            <a href="#">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+
+        <div class="hero">
+            <div class="hero__content">
+                <p class="intro-text">destiny 2</p>
+                <h1 class="big-text">Blog ufficiale Italiano</h1>
+                <a href="#shortcut_showcase" class="button">Scopri di più</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="intro">
+                <p class="normal-text">Buttati nello nello spazio e dai inizio alla tua avventura, acquisisci abilità e
+                    equipaggiamento sempre più potenti e diventa imbattibile, ma soprattutto divertiti!</p>
+            </div>
+
+            <div class="showcase" id="shortcut_showcase">
+                <div class="showcase__text-mod">
+                    <a href="./pages/wiki.html">
+                        <h2>wiki</h2>
+                    </a>
+                </div>
+                <div class="showcase__caption">
+                    <a href="./pages/wiki.html">
+                        <div class="showcase__caption__img"><img src="./images/races.png" alt="races"></div>
+                        <p class="small-text">Scopri nuove razze ed impara a difenderti</p>
+                    </a>
+                </div>
+                <div class="showcase__caption">
+                    <a href="./pages/wiki.html">
+                        <div class="showcase__caption__img"><img src="./images/world.png" alt="world"></div>
+                        <p class="small-text">Impara a conoscere il mondo di destiny 2</p>
+                    </a>
+                </div>
+                <div class="showcase__caption">
+                    <a href="./pages/wiki.html">
+                        <div class="showcase__caption__img"><img src="./images/red-war.jpg" alt="history"></div>
+                        <p class="small-text">Ascolta racconti sulle più famose battaglie</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="poster mt-2">
+                <div class="poster__content">
+                    <h2 class="big-intro-text">classi</h2>
+                    <p class="med-text">Cacciatore, Titano o Stregone? Scegli la tua classe e diventa un guardiano della
+                        luce</p>
+                    <a href="./pages/classi.html" class="button">Scopri di più</a>
+                </div>
+                <div class="poster__img"><img src="./images/classes_resized.png" alt="classi"></div>
+            </div>
+            <div class="poster mt-1">
+                <div class="poster__img"><img src="./images/mondi.png" alt="classi"></div>
+                <div class="poster__content">
+                    <h2 class="big-intro-text">Mondi</h2>
+                    <p class="med-text">Nessus, la Luna, Europa, qusti sono solo alcuni dei pianeti nell'universo di
+                        Destiny
+                    </p>
+                    <a href="./pages/mondi.html" class="button">Scopri di più</a>
+                </div>
+            </div>
+            <div class="poster mt-1">
+                <div class="poster__content">
+                    <h2 class="big-intro-text">equip.</h2>
+                    <p class="med-text">Armi, Armature e Veicoli di ogni genere, forgia e trova equipaggiamento di tutte
+                        le
+                        rarità</p>
+                    <a href="./pages/equip.html" class="button">Scopri di più</a>
+                </div>
+                <div class="poster__img"><img src="./images/equip.png" alt="classi"></div>
+            </div>
+        </div>
+
+        <div class="footer mt-2">
+            <p class="normal-text">Pagina scritta da Andrea Compagnoni & Bruno Zaninello</p>
+            <p class="small-text">2021 by Destiny2 blog</p>
+            <a href="#inizio">
+                <div id="tornasu">
+                    <img src="./images/freccia.webp" class="tornasu">
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".hamburger").on('click', function () {
+                $(".menu").toggleClass("menu--open");
+            });
+
+        });
+    </script>
+
+<script>
+
+    window.addEventListener ("scroll",function(){
+    
+    if (window.pageYOffset>300) {
+    document.getElementById ("tornasu").style.display= "block";
+    }
+    
+    else if (window.pageYOffset<300) {
+    document.getElementById ("tornasu").style.display= "none";
+    }
+    
+    val[0].innerHTML= "PageYOffset = "+window.pageYOffset
+    },!1);
+    
+    </script>
+
+</body>
+
+</html>
