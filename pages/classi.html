@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classi</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <a name="inizio"></a>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img src="../images/destiny-logo-white.png" alt="destiny-logo-white"></div>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./wiki.html">Wiki</a></li>
+                <li><a class="active" href="#">Classi</a></li>
+                <li><a href="./mondi.html">Mondi</a></li>
+                <li><a href="./equip.html">Equipaggiamento</a></li>
+            </ul>
+            <div class="cta"><a href="https://www.bungie.net/7/it/Destiny/NewLight" target="_blank" class="button">Gioca</a></div>
+            <a href="#">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+
+        <div class="hero3">
+            <div class="hero__content">
+                <p class="intro-text">destiny 2</p>
+                <h1 class="big-text">Classes</h1>
+            </div>
+        </div>
+
+        <div class="choice-bar mt-2">
+            <div class="choice-bar_img 1" onclick="change1()">
+                <img id="pic1" src="../images/warlock-logo_black.png" alt="warlock-logo">
+            </div>
+            <div class="choice-bar_img 2" onclick="change2()">
+                <img id="pic2" src="../images/hunter-logo_black.png" alt="hunter-logo">
+            </div>
+            <div class="choice-bar_img 3" onclick="change3()">
+                <img id="pic3" src="../images/titan-logo_black.png" alt="titan-logo">
+            </div>
+        </div>
+
+        <div class="mooving_section ">
+
+            <div class="warlock mt-1">
+
+                <div class="article">
+                    <div class="article__img-mod">
+                        <img src="../images/Stregone.jpg" alt="Warlock">
+                        <div class="article__img__text">
+                            <h2 class="big-text cw">WARLOCK</h2>
+                        </div>
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">The Destiny 2 Warlock is back in the sequel with a new Dawnblade
+                            subclass, and can generally control
+                            the battlefield through a number of new and unique abilities.</p>
+                        <h2 class="big-intro-text">class abilities</h2>
+                        <ul>
+                            <span>Class Skills:</span>
+                            <li>Healing Rift - Allows the Warlock to produce a circle of light, which gradually heals
+                                the player and all their allies
+                                inside the radius of the circle.</li>
+                            <li>Empowering Rift - Alternatively, you can produce the same circle of light, that this
+                                time boosts the attack power of
+                                all players inside the circle, instead of healing them.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase mt-1">
+                    <div class="showcase__text">
+                        <h2>subclasses</h2>
+                    </div>
+                    <div class="showcase__caption-mod">
+                        <a href="#subclass_voidwalker">
+                            <p class="normal-text">Voidwalker</p>
+                            <div class="showcase__caption__img"><img src="../images/voidwalker.jpg" alt="Voidwalker">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="showcase__caption-mod">
+                        <a href="#subclass_dawnblade">
+                            <p class="normal-text">Dawnblade</p>
+                            <div class="showcase__caption__img"><img src="../images/dawnblade.jpg" alt="Dawnblade">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="showcase__caption-mod">
+                        <a href="#subclass_stormcaller">
+                            <p class="normal-text">Stormcaller</p>
+                            <div class="showcase__caption__img"><img src="../images/stormcaller.jpg" alt="Stormcaller">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="article mt-2" id="subclass_voidwalker">
+                    <div class="article__img">
+                        <img src="../images/voidwalker_menu.jpg" alt="Voidwalker">
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text"></p>
+                        <h2 class="big-intro-text">Voidwalker abilities</h2>
+                        <ul>
+                            <span>Super Ability:</span>
+                            <li>L1+R1/LB+RB - Hurl an explosive bolt of Void Light, disintegrating all enemies caught in
+                                its blast.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Movement modes:</span>
+                            <li>Blink - Allows the Warlock to teleport forward a few meters, which should be handy for
+                                dodging incoming attacks.</li>
+                            <li>Strafe Glide - Glide through midair after jumping with strong directional control.</li>
+                            <li>Burst Glide - Gain a strong initial boost of speed through the air after jumping.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Grenade Abilities:</span>
+                            <li>Scatter - Produces one large grenade which then explodes into smaller grenades, covering
+                                a wide area in the process.</li>
+                            <li>Vortex - Creates a Vortex which continually damages enemies trapped inside it.</li>
+                            <li>Axion Bolt - Bolt of Void Light which splits into smaller bolts which seek out enemies.
+                            </li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Attunement of chaos Perks:</span>
+                            <li>Chaos Accelerant - Hold left shoulder button to draw energy from your Super Ability to
+                                overcharge your grenade, making it deadlier.</li>
+                            <li>Bloom - Void ability kills cause enemies to explode.</li>
+                            <li>Cataclysm - Nova Bomb seeks out enemies, fire your weapon at the bomb to detonate it
+                                earlier.</li>
+                            <li>Entropic Pull - Strike an enemy with your Melee to recharge your grenade.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Attunement of hunger Perks:</span>
+                            <li>Devour - Killing an enemy with this Melee ability fully restores your health.</li>
+                            <li>Feed the Void - Hold left shoulder button to consume your Grenade energy and regenerate
+                                your health.</li>
+                            <li>Insatiable - While Devour is active, killing an enemy extends its duration and recharges
+                                your Grenade.</li>
+                            <li>Vortex - Nova Bomb creates a spot that continually damages enemies trapped inside.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="article mt-1" id="subclass_dawnblade">
+                    <div class="article__img">
+                        <img src="../images/dawnblade_menu.png" alt="Dawnblade">
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">The Dawnblade subclass looks to replace the Sunsinger subclass from the
+                            original Destiny, allowing the
+                            Warlock to weave massive blades of fire through the air.</p>
+                        <h2 class="big-intro-text">dawnblade abilities</h2>
+                        <ul>
+                            <span>Super Ability:</span>
+                            <li>L1+R1/LB+RB - Weave Solar Light into multiple blades, striking enemies from midair.</li>
+                            <li>R1/RB - Throw Solar Light blades at enemies.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Movement modes:</span>
+                            <li>Strafe Glide - Glide through midair after jumping with strong directional control.</li>
+                            <li>Burst Glide - Gain a strong initial boost of speed through the air after jumping.</li>
+                            <li>Balanced Glide - A combination of moderate speed and directional control in midair.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Grenade Abilities:</span>
+                            <li>Solar Grenade - Creates Solar Light, and continually damages those inside of it.</li>
+                            <li>Firebolt - Unleashes bolts of Solar Light at nearby enemies.</li>
+                            <li>Fusion - An explosion that deals bonus damage if attached to a target.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Attunement of sky Perks:</span>
+                            <li>Winged Sun - Fire weapons and throw grenades while gliding.</li>
+                            <li>Heat Rises - Kills while airborne recharge your Grenade and Melee Energy.</li>
+                            <li>Icarus Dash - Double press Circle/B while airborne to dodge.</li>
+                            <li>Swift Strike - Strike an enemy to burn the target and temporarily increase your movement
+                                and reload speed.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Attunement of flame Perks:</span>
+                            <li>Igniting Touch - Strike an enemy to burn them, and then cause them to explode when
+                                killed.</li>
+                            <li>Fated for the Flame - Daybreak projectiles seek targets as they travel.</li>
+                            <li>Everlasting Fire - Killing an enemy with Daybreak extends its duration.</li>
+                            <li>Phoenix Dive - Hold Circle/B while midair to quickly descend and regain health.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="article mt-1" id="subclass_stormcaller">
+                    <div class="article__img">
+                        <img src="../images/stormcaller_menu.png" alt="Stormcaller">
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">The Warlock Stormcaller subclass is making a comeback from the original
+                            Destiny, carrying a focus on
+                            mainly Arc Lightning, besides from other elemental powers.</p>
+                        <h2 class="big-intro-text">Stormcaller abilities</h2>
+                        <ul>
+                            <span>Super Ability:</span>
+                            <li>L1+R1/LB+RB - Summon Arc Lightning in your hands.</li>
+                            <li>R1/RB - Fire repeated blasts of Arc Lightning from your hands at your enemies.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Movement modes:</span>
+                            <li>Controller Glide - Glide through midair after jumping with strong directional control.
+                            </li>
+                            <li>Focus Burst - Gain a strong initial boost of speed through the air after jumping.</li>
+                            <li>Balanced Glide - A combination of moderate speed and directional control in midair.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Grenade Abilities:</span>
+                            <li>Solar Grenade - Creates Solar Light, and continually damages those inside of it.</li>
+                            <li>Firebolt Grenade - Unleashes bolts of Solar Light at nearby enemies.</li>
+                            <li>Fusion Grenade - An explosion that deals bonus damage if attached to a target.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Attunement of ions Perks:</span>
+                            <li>Chain Lightning - Delivers a single Arc Lightning melee strike, that then chains to
+                                nearby enemies.</li>
+                            <li>Transcendence - Stormtrance lasts longer if cast with full grenade and melee energy.
+                            </li>
+                            <li>Arc Web - Enemies damaged by your grenades chain Arc Lightning damage to nearby enemies.
+                            </li>
+                            <li>Ionic Blink - While in Stormtrance, press the sprint button to teleport.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Attunement of the elements Perks:</span>
+                            <li>Gale Force - This Arc Lightning melee ability hits at range, and restores your grenade
+                                and melee energy.</li>
+                            <li>Landfall - When you cast Stormtrance, a wave of Arc Lightning shoots out to the ground
+                                beneath you.</li>
+                            <li>Rising Storm - Your Rift ability charges faster while allies are nearby.</li>
+                            <li>Arc Soul - Your Rift ability now grants you an Arc Soul ally in battle.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="hunter mt-1">
+
+                <div class="article">
+                    <div class="article__img-mod">
+                        <img src="../images/Cacciatore.jpg" alt="hunter">
+                        <div class="article__img__text">
+                            <h2 class="big-text cw">HUNTER</h2>
+                        </div>
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">Destiny 2's Hunter class, commonly represented by Nathan Fillion's
+                            Cayde-6,
+                            specialises in
+                            dealing
+                            out elemental damage across the battlefield through a variety of weapons and abilities.</p>
+                        <h2 class="big-intro-text">class abilities</h2>
+                        <ul>
+                            <span>Class Skills:</span>
+                            <li>Marksman's Dodge: A directional dodge that can be used to either quickly move yourself
+                                around
+                                the battlefield, or to dodge out of the way of oncoming damage.</li>
+                            <li>Gambler's Dodge: This effectively works the same as the Marksman's Dodge ability, except
+                                this
+                                version generates significant melee energy when used near enemies. </li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Movement Skills:</span>
+                            <li>High Jump - Jump a second time while airborne to reach greater heights.Strafe Jump -
+                                Jump a
+                                second time while airborne with strong directional control.</li>
+                            <li>Triple Jump - Jump a second or third time while airborne.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase mt-1">
+                    <div class="showcase__text">
+                        <h2>subclasses</h2>
+                    </div>
+                    <div class="showcase__caption-mod">
+                        <a href="#subclass_arcstrider">
+                            <p class="normal-text">arcstrider</p>
+                            <div class="showcase__caption__img"><img src="../images/arcstrider.png" alt="arcstrider">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="showcase__caption-mod">
+                        <a href="#subclass_gunslinger">
+                            <p class="normal-text">gunslinger</p>
+                            <div class="showcase__caption__img"><img src="../images/gunslinger.png" alt="Gunslinger">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="showcase__caption-mod">
+                        <a href="#subclass_nightstalker">
+                            <p class="normal-text">nightstalker</p>
+                            <div class="showcase__caption__img"><img src="../images/nightstalker.png"
+                                    alt="Nightstalker">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="article mt-2" id="subclass_arcstrider">
+                    <div class="article__img">
+                        <img src="../images/arcstrider_menu.png" alt="hunter">
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">The Hunter's Arcstrider subclass gives the player control over a large
+                            Arc
+                            Staff, while also giving them the power to move around the battlefield rapidly, evading
+                            enemy
+                            fire.</p>
+                        <h2 class="big-intro-text">arcstrider abilities</h2>
+                        <ul>
+                            <span>Super Ability:</span>
+                            <li>L1+R1/LB+RB - Forms a staff of pure Arc energy for the Hunter.</li>
+                            <li>R1/RB - Dodge around the battlefield, striking your nearest enemies with the Arc Staff.
+                            </li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Grenade Abilities:</span>
+                            <li>Arcbolt - Chains bolts of lightning to nearby enemies.</li>
+                            <li>Flux - An explosion which deals additional damage when attached to enemies.</li>
+                            <li>Skip - Splits upon impact, creating multiple projectiles which seek out enemies.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Way of the Warrior Perks:</span>
+                            <li>Deadly Reach - Dodging increases your Melee range, allowing you to strike enemies
+                                further
+                                away.</li>
+                            <li>Combat Flow - Melee kills recharge your Dodge ability.</li>
+                            <li>Combination Blow - Kill an enemy with this Melee ability to regenerate your
+                                health.Lethal
+                                Current - After Dodging, each Arc Staff hit creates aftershock lightning damage.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Way of the Wind Perks:</span>
+                            <li>Disorienting Blow - Strike an enemy with this Melee ability to disorient the target and
+                                nearby enemies.</li>
+                            <li>Focused Breathing - Sprinting recharges your Dodge ability.</li>
+                            <li>Combat Meditation - When critically wounded, Melee and Grenades recharge
+                                faster.Lightning
+                                Reflexes - You are harder to kill while Dodging.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="article mt-1" id="subclass_gunslinger">
+                    <div class="article__img">
+                        <img src="../images/gunslinger_menu.jpg" alt="hunter">
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">The Gunslinger subclass in Destiny 2 largely brings back an old Hunter
+                            subclass from the original Destiny,
+                            once again providing the player with a flaming pistol for a limited amount of time, which
+                            deals
+                            out some hefty damage.
+                            The changes from the original game to the sequel are subtle in the Gunslinger subclass, but
+                            refine the abilities that
+                            the Hunter can use.</p>
+                        <h2 class="big-intro-text">gunslinger abilities</h2>
+                        <ul>
+                            <span>Super Ability:</span>
+                            <li>L1+R1/LB+RB - Summons a flaming pistol that deals Solar Light damage to disintegrate
+                                enemies.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Grenade Abilities:</span>
+                            <li>Incendiary - The explosion from this grenade sets enemies on fire.</li>
+                            <li>Swarm - Detonates on impact, releasing drones that seek out enemies.</li>
+                            <li>Tripmine - Sticks to surfaces and triggers when enemies pass through its laser trigger.
+                            </li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Way of the Outlaw Perks:</span>
+                            <li>Deadshot - Significantly improves your ability to hit with the Golden Gun.</li>
+                            <li>Chains of Woe - Precision kills increase reload speed for you and nearby allies.</li>
+                            <li>Explosive Knife - Throw a knife that explodes shortly after impact.</li>
+                            <li>Six-Shooter - Golden Gun can be fired quickly up to 6 times, but has a shorter duration.
+                            </li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Way of the Sharpshooter Perks:</span>
+                            <li>Knife-Juggler - Precision kills with this throwing knife immediately recharge the
+                                ability.
+                            </li>
+                            <li>Practice Makes Perfect - Each precision hit reduces the cooldown of your Super Ability.
+                            </li>
+                            <li>Crowd-Pleaser - Enables precision damage with the Golden Gun, and precision hits
+                                generate
+                                Orbs of Light.</li>
+                            <li>Line 'Em Up - Precision hits with the Golden Gun increase its damage and duration.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="article mt-1" id="subclass_nightstalker">
+                    <div class="article__img">
+                        <img src="../images/nightstalker_menu.png" alt="hunter">
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">The Hunter Nightstalker class, first introduced back in the Taken King
+                            DLC
+                            for the original Destiny,
+                            will make a triumphant return in Destiny 2, bringing unique abilities like the Shadowshot
+                            and
+                            the Swarm Grenades.</p>
+                        <h2 class="big-intro-text">nightstalker abilities</h2>
+                        <ul>
+                            <span>Super Ability:</span>
+                            <li>L1+R1/LB+RB - Tethers enemies in a certain radius to an anchor, which slows and silences
+                                them for your fireteam to eliminate.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Grenade Abilities:</span>
+                            <li>Swarm Grenade - This grenade detonates on impact, releasing drone grenades that seek out
+                                nearby enemies.</li>
+                            <li>Incendiary Grenade - Any enemies in the radius of this explosion immediately catch on
+                                fire.
+                            </li>
+                            <li>Tripmine Grenade - Sticks to a surface and explodes when an enemy passes through its
+                                laser
+                                beam.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Way of the Trapper Perks:</span>
+                            <li>Snare Bomb - This smoke bomb sticks to a surface and detonates when enemies are near,
+                                blinding and disorientating them.</li>
+                            <li>Keen Scout - Sprint and sneak faster, gain an enhanced tracker, and tethered enemies are
+                                marked so you can track them easily.</li>
+                            <li>Deadfall - The Void Anchors fired from Shadowshot become traps, and they also have
+                                increased
+                                range and last for longer.</li>
+                            <li>Vanishing Step - Dodging makes you vanish from sight for a short time.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Way of the Pathfinder Perks:</span>
+                            <li>Vanish in Smoke - This smoke bomb creates a cloud that makes you and your allies
+                                invisible.
+                            </li>
+                            <li>Lockdown - Grenade and smoke effects last for twice as long.</li>
+                            <li>Heart of the Pack - Killing tethered enemies creates orbs of light, and increased
+                                mobility
+                                recovery, and resistence for you and your allies.</li>
+                            <li>Moebius Quiver - Shadowshot can be fired multiple times in succession, dealing massive
+                                damage to enemies caught in the blast.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="titan mt-1">
+
+                <div class="article">
+                    <div class="article__img-mod">
+                        <img src="../images/Titano.jpg" alt="Titan">
+                        <div class="article__img__text">
+                            <h2 class="big-text cw">TITAN</h2>
+                        </div>
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">Destiny 2's Titan is the heavy hitter class, able to deal out massive
+                            amounts
+                            of damage all while
+                            absorbing damage on behalf of their teammates.</p>
+                        <h2 class="big-intro-text">class abilities</h2>
+                        <ul>
+                            <span>Class Skills:</span>
+                            <li>Towering Barricade - Hold Circle/B to create a large barrier</li>
+                            <li>Rally Barricade - Hold Circle/B to create a small barrier that allows the player to peek
+                                over while aiming down sights.
+                                Instantly reloads weapon when you take cover.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Movement Skills:</span>
+                            <li>High Lift - Jumping while airborne activates Lift, launching you higher into the air.
+                            </li>
+                            <li>Strafe Lift - Jumping while airborne activates Lift, launching you into the air with
+                                strong
+                                directional control.</li>
+                            <li>Catapult Lift - Jumping while airborne activates Lift, launching you into the air with a
+                                strong initial burst of momentum.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase mt-1">
+                    <div class="showcase__text">
+                        <h2>subclasses</h2>
+                    </div>
+                    <div class="showcase__caption-mod">
+                        <a href="#subclass_sentinel">
+                            <p class="normal-text">Sentinel</p>
+                            <div class="showcase__caption__img"><img src="../images/sentinel1.jpg" alt="Sentinel"></div>
+                        </a>
+                    </div>
+                    <div class="showcase__caption-mod">
+                        <a href="#subclass_striker">
+                            <p class="normal-text">Striker</p>
+                            <div class="showcase__caption__img"><img src="../images/striker1.jpg" alt="Striker"></div>
+                        </a>
+                    </div>
+                    <div class="showcase__caption-mod">
+                        <a href="#subclass_sunbreaker">
+                            <p class="normal-text">Sunbreaker</p>
+                            <div class="showcase__caption__img"><img src="../images/sunbreaker.jpg" alt="Sunbreaker">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="article mt-2" id="subclass_sentinel">
+                    <div class="article__img">
+                        <img src="../images/Sentinel.png" alt="Sentinel">
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">The Sentinel subclass has a shield ability not unlike Captain America,
+                            able
+                            to both batter enemies up
+                            close with a glowing purple shield, as well as throwing said shield around the vicinity,
+                            bounding it off walls and straight
+                            into enemies.</p>
+                        <h2 class="big-intro-text">sentinel abilities</h2>
+                        <ul>
+                            <span>Super Ability:</span>
+                            <li>L1+R1/LB+RB - Summon a shield of Void Light.</li>
+                            <li>R1/RB - Attack with shield.</li>
+                            <li>L1/LB - Shield throw.</li>
+                            <li>Hold L2/LT - Guard.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Grenade Abilities:</span>
+                            <li>Magnetic - Attaches to enemies and explodes twice.</li>
+                            <li>Voidwall - Creates a horizontal wall of burning Void Light.</li>
+                            <li>Suppressor - Explosive that prevents enemies from using abilities for a short time.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Code of the Protector Perks:</span>
+                            <li>Defensive Strike - Kill an enemy with this melee ability to create an overshield around
+                                you
+                                and nearby allies.</li>
+                            <li>Rallying Force - Melee kills restore health for you and nearby friends.</li>
+                            <li>Turn the Tide - Overshield from Defensive Strike lasts longer and increases melee damage
+                                and
+                                reload speed.</li>
+                            <li>Ward of Dawn - When Super energy is full, hold L1/LB+R1/RB to create a shielding dome.
+                            </li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Code of the Aggressor Perks:</span>
+                            <li>Superior Arsenal - Grenade kills recharge your Grenade energy.</li>
+                            <li>Shield Bash - After sprinting, use melee to unleash a Shield Bash that disorients
+                                enemies.
+                            </li>
+                            <li>Second Shield - Gain an extra Shield Throw charge while Sentinel Shield is active.</li>
+                            <li>In the Trenches - Kills while surrounded by enemies reduce the cooldown time of your
+                                Super.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="article mt-1" id="subclass_striker">
+                    <div class="article__img">
+                        <img src="../images/Striker.png" alt="Striker">
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">Unlike the Sentinel subclass, we did have access to the Titan Striker
+                            subclass
+                            at preview events, so we've been able to go hands on with the subclass that feels a lot like
+                            the
+                            original
+                            Titan subclass from the first Destiny. The Titan has s similar ground slam Super.</p>
+                        <h2 class="big-intro-text">striker abilities</h2>
+                        <ul>
+                            <span>Super Ability:</span>
+                            <li>L1/LB+R1/RB - Supercharge your fists and slam into the ground.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Grenade Abilities:</span>
+                            <li>Flashbang - An explosive that disorients enemies it damages.</li>
+                            <li>Pulse - Periodically damages enemies inside the explosion radius.</li>
+                            <li>Lightning - Sticks to any surface and emits bolts of lightning.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Code of the Earthshaker Perks:</span>
+                            <li>Aftershocks - Damaging enemies with a Seismic Strike recharges your grenade.</li>
+                            <li>Magnitude - Gain an extra grenade charge and increase the duration of grenade effects.
+                            </li>
+                            <li>Terminal Velocity - The Fists of Havoc Super leaves a damaging field behind, dealing
+                                more
+                                damage the longer it’s in the air.</li>
+                            <li>Seismic Strike - While sprinting, use a melee attack to shoulder charge an enemy and
+                                create
+                                an Arc explosion.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="article mt-1" id="subclass_sunbreaker">
+                    <div class="article__img">
+                        <img src="../images/sunbreaker_menu.jpg" alt="Sunbreaker">
+                    </div>
+                    <div class="article__content">
+                        <p class="normal-text">As with the other Warlock and Hunter classes in Destiny 2, the Titan
+                            class is
+                            also retaining
+                            the subclass that it received through the Taken King DLC pack in the original Destiny.</p>
+                        <h2 class="big-intro-text">Sunbreaker abilities</h2>
+                        <ul>
+                            <span>Super Ability:</span>
+                            <li>L1/LB+R1/RB - Summons a flaming hammer, which you can repeatedly thrown at your enemies.
+                            </li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Grenade Abilities:</span>
+                            <li>Magnetic Grenade - Attaches to enemies and explodes twice.</li>
+                            <li>Voidwall Grenade - Creates a horizontal wall of burning void light.</li>
+                            <li>Supressor Grenade - Prevents enemies from using abilities for a short time.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Code of the Fire-forged Perks:</span>
+                            <li>Hammer Strike - Use this melee ability while sprinting to unleash a burning hammer.</li>
+                            <li>Tempered Metal - Any Solar ability kills grant you and nearby allies movement and reload
+                                bonuses.</li>
+                            <li>Battle-Forged - Enemies killed by the Hammer of Sol Super Ability explode.</li>
+                            <li>Vulcan's Rage - Hammers of Sol explode upon impact.</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <span>Code of the Siegebreaker Perks:</span>
+                            <li>Mortar Blast - When used, this melee ability causes enemies to explode, setting others
+                                on
+                                fire.</li>
+                            <li>Sun Warrior - All Solar ability kills restore player health.</li>
+                            <li>Rings of Fire - While standing in Sunspot, your Solar abilities charge faster and the
+                                Hammer
+                                of Sol lasts for longer.</li>
+                            <li>Solar Siege - Hammer of Sol creates sunspots where the hammers strike, and you throw
+                                hammers
+                                faster while in the Sunspot.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer mt-2">
+            <p class="normal-text">Pagina scritta da Andrea Compagnoni & Bruno Zaninello</p>
+            <p class="small-text">2021 by Destiny2 blog</p>
+            <a href="#inizio">
+                <div id="tornasu">
+                    <img src="../images/freccia.webp" class="tornasu">
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".hamburger").on('click', function () {
+                $(".menu").toggleClass("menu--open");
+            });
+
+
+            $(".1").on('click', function () {
+                $(".warlock").toggleClass("left");
+                $(".hunter").removeClass("left");
+                $(".titan").removeClass("left");
+            });
+            $(".2").on('click', function () {
+                $(".hunter").toggleClass("left");
+                $(".warlock").removeClass("left");
+                $(".titan").removeClass("left");
+            });
+            $(".3").on('click', function () {
+                $(".titan").toggleClass("left");
+                $(".hunter").removeClass("left");
+                $(".warlock").removeClass("left");
+            });
+
+        });
+    </script>
+
+    <script>
+        function change1() {
+            document.getElementById('pic3').src = '../images/titan-logo_black.png'
+            document.getElementById('pic2').src = '../images/hunter-logo_black.png'
+            document.getElementById('pic1').src = '../images/warlok-logo_white.png'
+        }
+        function change2() {
+            document.getElementById('pic3').src = '../images/titan-logo_black.png'
+            document.getElementById('pic2').src = '../images/hunter-logo_white.png'
+            document.getElementById('pic1').src = '../images/warlock-logo_black.png'
+        }
+        function change3() {
+            document.getElementById('pic3').src = '../images/titan-logo_white.png'
+            document.getElementById('pic2').src = '../images/hunter-logo_black.png'
+            document.getElementById('pic1').src = '../images/warlock-logo_black.png'
+        }
+    </script>
+
+
+    <script>
+
+        window.addEventListener("scroll", function () {
+
+            if (window.pageYOffset > 300) {
+                document.getElementById("tornasu").style.display = "block";
+            }
+
+            else if (window.pageYOffset < 300) {
+                document.getElementById("tornasu").style.display = "none";
+            }
+
+            val[0].innerHTML = "PageYOffset = " + window.pageYOffset
+        }, !1);
+
+    </script>
+
+</body>
+
+</html>
